@@ -1,0 +1,426 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Getters | Table of Contents</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-prism/prism.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./data-flow.html" />
+    
+    
+    <link rel="prev" href="./actions.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.4"
+        data-chapter-title="Getters"
+        data-filepath="getters.md"
+        data-basepath="."
+        data-revision="Fri Feb 19 2016 10:57:17 GMT-0500 (EST)"
+        data-innerlanguage="en">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="intro.html">
+            
+                
+                    <a href="./intro.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        What is Vuex?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="concepts.html">
+            
+                
+                    <a href="./concepts.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Core Concepts
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="state.html">
+            
+                
+                    <a href="./state.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        State
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="mutations.html">
+            
+                
+                    <a href="./mutations.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Mutations
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="actions.html">
+            
+                
+                    <a href="./actions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Actions
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.4" data-path="getters.html">
+            
+                
+                    <a href="./getters.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Getters
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="data-flow.html">
+            
+                
+                    <a href="./data-flow.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Data Flow
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="structure.html">
+            
+                
+                    <a href="./structure.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Application Structure
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="middlewares.html">
+            
+                
+                    <a href="./middlewares.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Middlewares
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="strict.html">
+            
+                
+                    <a href="./strict.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Strict Mode
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="forms.html">
+            
+                
+                    <a href="./forms.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Form Handling
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="testing.html">
+            
+                
+                    <a href="./testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        Testing
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="hot-reload.html">
+            
+                
+                    <a href="./hot-reload.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        Hot Reloading
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="api.html">
+            
+                
+                    <a href="./api.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        API Reference
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Table of Contents</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="getters">Getters</h1>
+<p>It&apos;s possible that multiple components will need the same computed property based on Vuex state. Since computed getters are just functions, you can split them out into a separate file so that they can be shared in any component via the store:</p>
+<pre><code class="lang-js"><span class="token keyword">import</span> Vue from <span class="token string">&apos;vue&apos;</span>
+<span class="token keyword">import</span> Vuex from <span class="token string">&apos;../../../src&apos;</span>
+<span class="token keyword">import</span> actions from <span class="token string">&apos;./actions&apos;</span>
+<span class="token keyword">import</span> mutations from <span class="token string">&apos;./mutations&apos;</span>
+<span class="token keyword">import</span> getters from <span class="token string">&apos;./getters&apos;</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Vuex<span class="token punctuation">)</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  state<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">/*...*/</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  actions<span class="token punctuation">,</span>
+  mutations<span class="token punctuation">,</span>
+  getters
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<pre><code class="lang-js"><span class="token comment" spellcheck="true">// getters.js</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> filteredTodos <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> state<span class="token punctuation">.</span>messages<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>message <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> message<span class="token punctuation">.</span>threadID <span class="token operator">===</span> state<span class="token punctuation">.</span>currentThreadID
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<pre><code class="lang-js"><span class="token comment" spellcheck="true">// in a component...</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> getters <span class="token punctuation">}</span> from <span class="token string">&apos;./store&apos;</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> filteredTodos <span class="token punctuation">}</span> <span class="token operator">=</span> getters
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    filteredTodos
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>For an actual example, check out the <a href="https://github.com/vuejs/vuex/tree/master/examples/shopping-cart" target="_blank">Shopping Cart Example</a>.
+For an actual example with hot reload API, check out the <a href="https://github.com/vuejs/vuex/tree/master/examples/counter-hot" target="_blank">Counter Hot Example</a>.</p>
+<p>This is very similar to <a href="https://optimizely.github.io/nuclear-js/docs/04-getters.html" target="_blank">Getters in NuclearJS</a>.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./actions.html" class="navigation navigation-prev " aria-label="Previous page: Actions"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./data-flow.html" class="navigation navigation-next " aria-label="Next page: Data Flow"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-edit-link/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"edit-link":{"base":"https://github.com/vuejs/vuex/tree/master/docs","label":"Edit This Page"},"github":{"url":"https://github.com/vuejs/vuex/"},"prism":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

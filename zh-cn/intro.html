@@ -1,0 +1,381 @@
+<!DOCTYPE HTML>
+<html lang="zh-tw" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>什么是 Vuex? | Table of Contents</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-prism/prism.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./concepts.html" />
+    
+    
+    <link rel="prev" href="./index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="1"
+        data-chapter-title="什么是 Vuex?"
+        data-filepath="intro.md"
+        data-basepath="."
+        data-revision="Fri Feb 19 2016 10:57:17 GMT-0500 (EST)"
+        data-innerlanguage="zh-cn">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        介紹
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1" data-path="intro.html">
+            
+                
+                    <a href="./intro.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        什么是 Vuex?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="concepts.html">
+            
+                
+                    <a href="./concepts.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        核心概念
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="state.html">
+            
+                
+                    <a href="./state.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        State
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="mutations.html">
+            
+                
+                    <a href="./mutations.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Mutations
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="actions.html">
+            
+                
+                    <a href="./actions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Actions
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="data-flow.html">
+            
+                
+                    <a href="./data-flow.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        数据流
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="structure.html">
+            
+                
+                    <a href="./structure.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        应用结构
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="middlewares.html">
+            
+                
+                    <a href="./middlewares.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        中间件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="strict.html">
+            
+                
+                    <a href="./strict.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        严格模式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="forms.html">
+            
+                
+                    <a href="./forms.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        表单处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="testing.html">
+            
+                
+                    <a href="./testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        测试
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="hot-reload.html">
+            
+                
+                    <a href="./hot-reload.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        热重载
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="api.html">
+            
+                
+                    <a href="./api.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        API Reference
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    本書使用 GitBook 釋出
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Table of Contents</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="&#x4EC0;&#x4E48;&#x662F;-vuex">&#x4EC0;&#x4E48;&#x662F; Vuex?</h2>
+<p>Vuex &#x662F;&#x4E00;&#x4E2A;&#x4E13;&#x95E8;&#x4E3A; Vue.js &#x5E94;&#x7528;&#x8BBE;&#x8BA1;&#x7684;&#x72B6;&#x6001;&#x7BA1;&#x7406;&#x67B6;&#x6784;&#x3002;&#x5B83;&#x501F;&#x9274;&#x4E86; <a href="https://facebook.github.io/flux/" target="_blank">Flux</a> &#x548C; <a href="https://github.com/rackt/redux" target="_blank">Redux</a> &#x7684;&#x8BBE;&#x8BA1;&#x601D;&#x60F3;&#xFF0C;&#x4F46;&#x7B80;&#x5316;&#x4E86;&#x6982;&#x5FF5;&#x548C; API&#xFF0C;&#x5E76;&#x4E14;&#x91C7;&#x7528;&#x4E86;&#x4E00;&#x79CD;&#x66F4;&#x52A0;&#x7B26;&#x5408; Vue.js &#x7684;&#x6570;&#x636E;&#x54CD;&#x5E94;&#x7CFB;&#x7EDF;&#xFF08;reactivity system&#xFF09;&#x7684;&#x5B9E;&#x73B0;&#x3002;</p>
+<h2 id="&#x6211;&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x5B83;&#xFF1F;">&#x6211;&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x5B83;&#xFF1F;</h2>
+<p>&#x5F53;&#x4F60;&#x7684;&#x5E94;&#x7528;&#x8FD8;&#x5F88;&#x7B80;&#x5355;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x5E76;&#x4E0D;&#x9700;&#x8981; Vuex&#x3002;&#x6211;&#x4E5F;&#x5E76;&#x4E0D;&#x5EFA;&#x8BAE;&#x5728;&#x6240;&#x6709;&#x7684;&#x573A;&#x5408;&#x90FD;&#x4F7F;&#x7528; Vuex&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x6B63;&#x5728;&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x8F83;&#x5927;&#x89C4;&#x6A21;&#x7684; SPA&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x5F00;&#x59CB;&#x601D;&#x8003;&#x5E94;&#x8BE5;&#x5982;&#x4F55;&#x5904;&#x7406; Vue &#x7EC4;&#x4EF6;&#x4E4B;&#x5916;&#x7684;&#x5E94;&#x7528;&#x7ED3;&#x6784;&#x3002;&#x8FD9;&#x5C31;&#x662F; Vuex &#x8981;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5728;&#x7528; Vue.js &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x901A;&#x5E38;&#x4F1A;&#x628A;&#x72B6;&#x6001;&#x50A8;&#x5B58;&#x5728;&#x7EC4;&#x4EF6;&#x7684;&#x5185;&#x90E8;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#x90FD;&#x62E5;&#x6709;&#x4E00;&#x90E8;&#x5206;&#x72B6;&#x6001;&#xFF0C;&#x6574;&#x4E2A;&#x5E94;&#x7528;&#x7684;&#x72B6;&#x6001;&#x662F;&#x5206;&#x6563;&#x5728;&#x591A;&#x4E2A;&#x5730;&#x65B9;&#x7684;&#x3002;&#x7136;&#x800C;&#x6211;&#x4EEC;&#x7ECF;&#x5E38;&#x9047;&#x5230;&#x7684;&#x4E00;&#x4E2A;&#x9700;&#x6C42;&#x5C31;&#x662F;&#x9700;&#x8981;&#x628A;&#x4E00;&#x90E8;&#x5206;&#x7684;&#x72B6;&#x6001;&#x5171;&#x4EAB;&#x7ED9;&#x5176;&#x5B83;&#x7EC4;&#x4EF6;&#x3002;&#x901A;&#x5E38;&#x6211;&#x4EEC;&#x4F1A;&#x4F7F;&#x7528; Vue &#x6216;&#x662F;&#x7B2C;&#x4E09;&#x65B9;&#x7684;&#x4E8B;&#x4EF6;&#x7CFB;&#x7EDF;&#x53BB;&#x8FBE;&#x5230;&#x8FD9;&#x4E2A;&#x76EE;&#x7684;&#x3002;&#x4F46;&#x57FA;&#x4E8E;&#x4E8B;&#x4EF6;&#x7684;&#x95EE;&#x9898;&#x5728;&#x4E8E;&#xFF0C;&#x4E8B;&#x4EF6;&#x6D41;&#x4F1A;&#x5728;&#x9010;&#x6E10;&#x589E;&#x957F;&#x7684;&#x7EC4;&#x4EF6;&#x6811;&#x4E2D;&#x53D8;&#x5F97;&#x590D;&#x6742;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x51FA;&#x73B0;&#x95EE;&#x9898;&#x7684;&#x65F6;&#x5019;&#x5F88;&#x96BE;&#x53BB;&#x53D1;&#x73B0;&#x95EE;&#x9898;&#x7684;&#x6240;&#x5728;&#xFF08;&#x5178;&#x578B;&#x7684;&#x5982;&#x4E8B;&#x4EF6; ping-pong&#xFF0C;&#x5373;&#x5B50;&#x7EC4;&#x4EF6; dispatch &#x5230;&#x7236;&#x7EC4;&#x4EF6;&#xFF0C;&#x518D;&#x7531;&#x7236;&#x7EC4;&#x4EF6; broadcast&#xFF09;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x66F4;&#x597D;&#x7684;&#x89E3;&#x51B3;&#x5728;&#x5927;&#x578B;&#x5E94;&#x7528;&#x4E2D;&#x5171;&#x4EAB;&#x72B6;&#x6001;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x628A;&#x7EC4;&#x4EF6;&#x7684;&#x672C;&#x5730;&#x72B6;&#x6001; (component local state) &#x548C;&#x5E94;&#x7528;&#x72B6;&#x6001; (application level state) &#x533A;&#x5206;&#x5F00;&#x6765;&#x3002;&#x5E94;&#x7528;&#x7EA7;&#x7684;&#x72B6;&#x6001;&#x4E0D;&#x5C5E;&#x4E8E;&#x4EFB;&#x4F55;&#x7279;&#x5B9A;&#x7684;&#x7EC4;&#x4EF6;&#xFF0C;&#x4F46;&#x6BCF;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#x4ECD;&#x7136;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; Vue &#x7684;&#x54CD;&#x5E94;&#x7CFB;&#x7EDF;&#x53BB;&#x4FA6;&#x542C;&#x5176;&#x53D8;&#x5316;&#x4ECE;&#x800C;&#x81EA;&#x52A8;&#x66F4;&#x65B0; DOM&#x3002;&#x901A;&#x8FC7;&#x628A;&#x5E94;&#x7528;&#x7684;&#x72B6;&#x6001;&#x7BA1;&#x7406;&#x903B;&#x8F91;&#x653E;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x5730;&#x65B9;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x5404;&#x4E2A;&#x5730;&#x65B9;&#x53BB;&#x5904;&#x7406;&#x5404;&#x79CD;&#x4E8B;&#x4EF6;&#xFF0C;&#x56E0;&#x4E3A;&#x4EFB;&#x4F55;&#x7275;&#x626F;&#x5230;&#x591A;&#x4E2A;&#x7EC4;&#x4EF6;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x90FD;&#x4F1A;&#x653E;&#x5728;&#x8FD9;&#x4E2A;&#x5730;&#x65B9;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x4E5F;&#x80FD;&#x4F7F;&#x8BB0;&#x5F55;&#x548C;&#x68C0;&#x67E5;&#x72B6;&#x6001;&#x7684;&#x6539;&#x53D8;&#x6210;&#x4E3A;&#x53EF;&#x80FD;&#xFF0C;&#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x505A;&#x51FA;&#x50CF; time-travel &#x8FD9;&#x6837;&#x7684;&#x8C03;&#x8BD5;&#x529F;&#x80FD;&#x3002;</p>
+<p>Vuex &#x4E5F;&#x5BF9;&#x72B6;&#x6001;&#x7BA1;&#x7406;&#x7684;&#x4EE3;&#x7801;&#x5206;&#x79BB;&#x6709;&#x4E00;&#x5B9A;&#x7A0B;&#x5EA6;&#x7684;&#x7EA6;&#x675F;&#xFF0C;&#x4F46;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x4F60;&#x5B9E;&#x9645;&#x4EE3;&#x7801;&#x7ED3;&#x6784;&#x7684;&#x7075;&#x6D3B;&#x6027;&#x3002;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./index.html" class="navigation navigation-prev " aria-label="Previous page: 介紹"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./concepts.html" class="navigation navigation-next " aria-label="Next page: 核心概念"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-edit-link/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"edit-link":{"base":"https://github.com/vuejs/vuex/tree/master/docs","label":"Edit This Page"},"github":{"url":"https://github.com/vuejs/vuex/"},"prism":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
